@@ -1,0 +1,221 @@
+*{
+    color: #1f291d;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(84,166,48);
+    background: linear-gradient(180deg, rgba(84,166,48,1) 0%, rgba(101,183,65,1) 50%, rgb(155, 218, 134) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    box-sizing: border-box;
+    margin: 50px;
+}
+
+.box{
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.521);
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.container .box p {
+    text-align:justify;
+    margin: 30px;
+    font-size: 16px;
+}
+
+.input {
+    background: bisque;
+    box-shadow: 0;
+    padding: 20px;
+}
+
+input{
+    border: 0px;
+    padding: 10px;
+    width: 100px;
+}
+
+/*Jenis Kelamin*/
+
+.gender {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+
+}
+.gender .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+  }
+  
+.gender .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+.gender .container:hover input ~ .checkmark {
+    background-color: #40513B;
+    transition: all 0.5s;
+}
+  
+.gender .container input:checked ~ .checkmark {
+    background-color: #609966;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.gender .container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.gender .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+button.calculate {
+    cursor: pointer;
+    color: #fff;
+    background: #609966;
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 12px 0;
+    width: 50%;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+  }
+  button.calculate:hover {
+    background: #3e6842;
+  }
+
+  .content {
+    padding: 0 30px;
+    
+}
+
+
+.input {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #40513B;
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.inputW {
+    background: #fff;
+    
+    border-radius: 12px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.inputW label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.inputW input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #40513B;
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.inputH {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.inputH label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.inputH input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #40513B;
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.result{
+    display: block;
+    margin: 10px;
+    background-color: #9DC08B;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+
+#result{
+    font-size: 50px;
+}
+
+.konsul{
+    margin-top: 10px;
+}
